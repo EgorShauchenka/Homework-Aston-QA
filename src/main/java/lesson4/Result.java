@@ -19,6 +19,7 @@ public class Result {
         diagonally();
         int[] result = arrays(3, 67);
         System.out.println(Arrays.toString(result));
+
     }
 
     private static void printThreeWords() {
