@@ -1,4 +1,4 @@
-package lesson11;
+package lesson12;
 
 public class Result {
     public static void main(String[] args) throws MyArraySizeException, MyArrayDataException {
