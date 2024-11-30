@@ -1,6 +1,5 @@
 package lesson15_16;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
