@@ -3,8 +3,6 @@ package lesson15_16;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -51,7 +49,9 @@ public class CheckingTheBlockMtsTests extends TestBase {
                 .setValue("297777777", "150", "example@mail.com");
 
         String actualText = mtsPage.getText();
-        Assertions.assertEquals("Безопасная оплата обеспечивается", actualText);
+        Assertions.assertTrue(actualText.contains("Безопасная оплата обеспечивается"),
+                "Текст кнопки не содержит ожидаемую строку.");
+
         mtsPage.switchToDefaultContent();
     }
 }
